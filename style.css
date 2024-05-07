@@ -1,0 +1,72 @@
+body {
+    font-family: Arial, sans-serif;
+    color: #030000;
+    margin: 0;
+    padding: 0;
+    background-color: #ADD8E6;
+}
+h1 {
+    transition: color 0.3s; /* Adiciona uma transição suave */
+    font-weight: bold; /* Deixa o texto em negrito */
+    
+}
+h1:hover {
+    color: #ffffff; /* Muda a cor do texto para branco quando o mouse passa por cima */
+}
+.container {
+    color: #030000; /* Definindo a cor do texto no container */
+    max-width: 800px;
+    margin: 20px auto;
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    display: flex; 
+    background: linear-gradient(135deg, #2da5d4, #178fc7); /* Gradient para criar uma aparência metálica */
+    background-size: 400% 400%;
+    animation: gradientAnimation 10s ease infinite;
+}
+.profile-image {
+    flex: 1; /* Ajuste de tamanho relativo */
+    margin-right: 10px; /* Espaçamento entre as divs */
+    text-align: center;
+    margin-top: 30px;
+    position: relative; /* Para usar posicionamento absoluto */
+}
+.profile-image img {
+    width: 100%;
+    margin: 0;
+    height: auto;
+    display: block;
+    border-radius: 50%;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+    position: center; /* Posicionamento absoluto para permitir sobreposição */
+    transition: transform 0.3s; /* Adiciona uma transição suave para o efeito de zoom */
+}
+.profile-image img:hover {
+    transform: scale(1.1); /* Aumenta o tamanho da imagem em 10% quando o mouse passa por cima */
+}
+.bio {
+    flex: 2; /* Ajuste de tamanho relativo */
+    text-align: left;
+    margin-left: 20px; /* Adiciona margem à esquerda */
+}
+p {
+    line-height: 1.6;
+    margin-bottom: 10px;
+    font-weight: bold; /* Deixa o texto em negrito */
+    color: #030000; /* Definindo a cor do texto nos parágrafos */
+}
+p:hover {
+    color: #ffffff; /* Muda a cor do texto para branco quando o mouse passa por cima */
+}
+@keyframes gradientAnimation {
+    0% {
+        background-position: 0% 50%;
+    }
+    50% {
+        background-position: 100% 50%;
+    }
+    100% {
+        background-position: 0% 50%;
+    }
+}
