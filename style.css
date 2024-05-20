@@ -13,6 +13,8 @@ h1 {
 h1:hover {
     color: #ffffff; /* Muda a cor do texto para branco quando o mouse passa por cima */
 }
+
+
 .container {
     color: #030000; /* Definindo a cor do texto no container */
     max-width: 80px;
