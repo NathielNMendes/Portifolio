@@ -15,7 +15,7 @@ h1:hover {
 }
 .container {
     color: #030000; /* Definindo a cor do texto no container */
-    max-width: 800px;
+    max-width: 80px;
     margin: 20px auto;
     padding: 20px;
     border-radius: 10px;
@@ -69,4 +69,10 @@ p:hover {
     100% {
         background-position: 0% 50%;
     }
+}
+
+@media (max-width: 600px) {
+    .container {
+        flex-direction: column;
+    }  
 }

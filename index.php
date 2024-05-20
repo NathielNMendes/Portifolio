@@ -38,10 +38,12 @@
             <p>Experiências Profissional: Soldado Fuzileiro Naval da Marinha do Brasil.</p>
             <p>Links de contato </p>
            
-            <a id="link" href="https://www.linkedin.com/in/nathiel-mendes-07164424b/" style="display:none;">https://www.exemplo.com</a>
+            <div id="rodapé" >
+                <a id="link" href="https://www.linkedin.com/in/nathiel-mendes-07164424b/" style="display:none;">https://www.exemplo.com</a>
             <button onclick="mostrarLink()">Linked in </button>
-            
+            </div>
            
+
         </div>
     </div>
 </body>
