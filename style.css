@@ -17,7 +17,7 @@ h1:hover {
 
 .container {
     color: #030000; /* Definindo a cor do texto no container */
-    max-width: 80px;
+    max-width: 800px;
     margin: 20px auto;
     padding: 20px;
     border-radius: 10px;
@@ -72,9 +72,64 @@ p:hover {
         background-position: 0% 50%;
     }
 }
+.footer {
+    position: fixed;
+    bottom: 0;
+    left: 0;
+    width: 100%;
+    background-color: #333; /* Cor de fundo */
+    color: #fff; /* Cor do texto */
+    text-align: center; /* Alinhamento do texto */
+    padding: 10px 0; /* Espaçamento interno */
+}
 
-@media (max-width: 600px) {
-    .container {
+
+.header {
+    background-color: #333;
+    color: #fff;
+    padding: 10px 20px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.header h1 {
+    margin: 0;
+}
+
+nav ul {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    display: flex;
+}
+
+nav ul li {
+    margin-right: 20px;
+}
+
+nav ul li:last-child {
+    margin-right: 0;
+}
+
+nav ul li a {
+    color: #fff;
+    text-decoration: none;
+}
+
+/* Media Query para ajustar o menu em telas menores */
+@media screen and (max-width: 600px) {
+    .header {
         flex-direction: column;
-    }  
+        align-items: flex-start;
+    }
+
+    nav ul {
+        flex-direction: column;
+    }
+
+    nav ul li {
+        margin-right: 0;
+        margin-bottom: 10px;
+    }
 }

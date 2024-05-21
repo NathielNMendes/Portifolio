@@ -5,24 +5,20 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Meu Portfólio</title>
     <link rel="stylesheet" href="style.css">
-    <title>Botão com Link</title>
-    <script>
-        var linkMostrado = false; // Variável para rastrear se o link foi mostrado
-        
-        function mostrarLink() {
-            if (!linkMostrado) { // Verifica se o link ainda não foi mostrado
-                // Obtém o elemento do link
-                var link = document.getElementById("link");
-                
-                // Redireciona para o link
-                window.open(link.href);
-                
-                linkMostrado = true; // Atualiza a variável para indicar que o link foi mostrado
-            }
-        }
-    </script>
 </head>
 <body>
+<div class="header">
+        <h1>Meu Site</h1>
+        <nav>
+            <ul>
+                <li><a href="#">Início</a></li>
+                <li><a href="#">Sobre</a></li>
+                <li><a href="#">Portfólio</a></li>
+                <li><a href="#">Contato</a></li>
+            </ul>
+        </nav>
+    </div>
+
     <div class="container">
         <div class="profile-image">
             <img src="nathiel1.jpeg" alt="Minha Foto">
@@ -38,13 +34,22 @@
             <p>Experiências Profissional: Soldado Fuzileiro Naval da Marinha do Brasil.</p>
             <p>Links de contato </p>
            
-            <div id="rodapé" >
-                <a id="link" href="https://www.linkedin.com/in/nathiel-mendes-07164424b/" style="display:none;">https://www.exemplo.com</a>
-            <button onclick="mostrarLink()">Linked in </button>
+            <div id="rodape">
+                <a id="link" href="https://www.linkedin.com/in/nathiel-mendes-07164424b/">https://www.exemplo.com</a>
+                <button onclick="mostrarLink()">LinkedIn</button>
             </div>
-           
-
         </div>
     </div>
+
+    <div class="footer">
+        <p>Rodapé</p>
+    </div>
+
+    <script>
+        function mostrarLink() {
+            var link = document.getElementById("link");
+            window.open(link.href, "_blank");
+        }
+    </script>
 </body>
 </html>
