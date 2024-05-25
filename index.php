@@ -18,7 +18,7 @@
                 <li><a href="#">Início</a></li>
                 <li><a href="#">Sobre</a></li>
                 <li><a href="#">Portfólio</a></li>
-                <li><a href="#">Contato</a></li>
+                <li><a href="./contato.php">Contato</a></li>
             </ul>
         </nav>
     </div>
@@ -60,7 +60,7 @@
             nav.classList.toggle('show');
         }
         
-  
+
 
     </script>
 
