@@ -1,5 +1,5 @@
 <?php
-ok
+// cometarios 
 ?>
 
 <!DOCTYPE html>
