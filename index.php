@@ -1,3 +1,7 @@
+<?php
+
+?>
+
 <!DOCTYPE html>
 <html lang="pt-br">
 <head>
@@ -50,6 +54,15 @@
             var link = document.getElementById("link");
             window.open(link.href, "_blank");
         }
+        
+        function toggleMenu() {
+            var nav = document.querySelector('.nav-links');
+            nav.classList.toggle('show');
+        }
+    
+
     </script>
 </body>
 </html>
+
+
