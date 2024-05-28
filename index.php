@@ -9,6 +9,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Meu Portfólio</title>
     <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15">
 </head>
 <body>
 <div class="header">
@@ -36,12 +37,9 @@
             <p>Formação Acadêmica: Graduado em Gestão em Segurança Privada pela Universidade Interativa UNINTER.</p>
             <p>Experiências Profissional: Supervisor na Inviolável Sistemas de Segurança.</p>
             <p>Experiências Profissional: Soldado Fuzileiro Naval da Marinha do Brasil.</p>
-            <p>Links de contato </p>
-           
-            <div id="rodape">
-                <a id="link" href="https://www.linkedin.com/in/nathiel-mendes-07164424b/">https://www.exemplo.com</a>
-                <button onclick="mostrarLink()">LinkedIn</button>
-            </div>
+            
+            
+
         </div>
     </div>
 

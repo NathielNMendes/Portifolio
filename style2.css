@@ -1,0 +1,61 @@
+body {
+    font-family: Arial, sans-serif;
+    background-color: #f2f2f2; /* Cor de fundo do corpo */
+}
+
+.container {
+    width: 400px;
+    margin: 0 auto; /* Isso centralizará a caixa horizontalmente */
+    margin-top: 50px; /* Espaço superior */
+    padding: 20px;
+    border-radius: 15px; /* Bordas arredondadas */
+    background: linear-gradient(to bottom right, #86ecec, #f8f6f6); /* Fundo em degrade */
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1); /* Sombra */
+    display: flex;
+}
+
+.form-container {
+    flex: 1;
+    margin-right: 20px;
+}
+
+.other-info {
+    flex: 1;
+}
+
+.container h2 {
+    text-align: center;
+}
+
+.container form {
+    text-align: left;
+}
+
+.container label {
+    font-weight: bold;
+}
+
+.container input[type="text"],
+.container input[type="email"],
+.container textarea {
+    width: 100%;
+    padding: 8px;
+    margin-bottom: 10px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    box-sizing: border-box;
+}
+
+.container input[type="submit"] {
+    width: 100%;
+    padding: 10px;
+    border: none;
+    border-radius: 5px;
+    background-color: #4caf50; /* Cor do botão de envio */
+    color: white;
+    cursor: pointer;
+}
+
+.container input[type="submit"]:hover {
+    background-color: #45a049; /* Cor do botão de envio ao passar o mouse */
+}

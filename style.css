@@ -3,7 +3,7 @@ body {
     color: #030000;
     margin: 0;
     padding: 0;
-    background-color: #ADD8E6;
+    background-color: #94d3e2;
 }
 h1 {
     transition: color 0.3s; /* Adiciona uma transição suave */
@@ -23,7 +23,7 @@ h1:hover {
     border-radius: 10px;
     box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
     display: flex; 
-    background: linear-gradient(135deg, #2da5d4, #178fc7); /* Gradient para criar uma aparência metálica */
+    background: linear-gradient(to bottom right, #86ecec, #f8f6f6); /* Fundo em degrade */
     background-size: 400% 400%;
     animation: gradientAnimation 10s ease infinite;
 }
@@ -59,7 +59,7 @@ p {
     color: #030000; /* Definindo a cor do texto nos parágrafos */
 }
 p:hover {
-    color: #ffffff; /* Muda a cor do texto para branco quando o mouse passa por cima */
+    color: #faf6f6; /* Muda a cor do texto para branco quando o mouse passa por cima */
 }
 @keyframes gradientAnimation {
     0% {
