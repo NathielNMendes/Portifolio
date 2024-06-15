@@ -4,14 +4,14 @@ body {
 }
 
 .container {
-    width: 400px;
+    width: 800px;
     margin: 0 auto; /* Isso centralizará a caixa horizontalmente */
     margin-top: 50px; /* Espaço superior */
     padding: 20px;
     border-radius: 15px; /* Bordas arredondadas */
     background: linear-gradient(to bottom right, #86ecec, #f8f6f6); /* Fundo em degrade */
     box-shadow: 0 0 10px rgba(0, 0, 0, 0.1); /* Sombra */
-    display: flex;
+    display: column;
 }
 
 .form-container {

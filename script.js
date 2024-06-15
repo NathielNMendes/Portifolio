@@ -1,4 +1,20 @@
-$.ajax({
+
+ function validacao(){
+    let nome=document.getElementById("nome").value;
+    let email=document.getElementById("email").value;
+        if (nome==""){
+         alert ("Voce nao preencheu o nome ");
+         return false;
+    }
+        if(email==/^[^\s@]+@[^\s@]+\.[^\s@]+$/l){
+        return regex.test(email);
+     }     else {
+        alert("O email é inválido.");
+    }
+   
+      
+ } 
+ /**$.ajax({
     type: 'POST',
     url: 'sua_api_de_envio_de_email',
     data: {
@@ -9,9 +25,11 @@ $.ajax({
         'mensagem': $('textarea[name=mensagem]').val()
     },
     dataType: 'json',
-    encode: true
-})
-$(document).ready(function() {
+    encode: true 
+   
+}) 
+    *///
+ /*$(document).ready(function() {
     $('#contactForm').submit(function(e) {
         e.preventDefault(); // Evita o envio padrão do formulário
 
@@ -41,3 +59,4 @@ $(document).ready(function() {
         });
     });
 });
+*/
