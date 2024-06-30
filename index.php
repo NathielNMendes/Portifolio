@@ -16,6 +16,12 @@
 <script>
     function construirProjetos(){
             const jason = `[
+                {
+                "projetoNome":"PORTIFOLIO",
+                "projetoIMG":"nathiel1.jpeg",
+                "projetoDesc": " meu projeto inicial em programaçao ",
+                "projetoLink": "https://github.com/NathielNMendes/Portifolio"
+                },
                  {
                 "projetoNome":"PORTIFOLIO",
                 "projetoIMG":"nathiel1.jpeg",
@@ -58,13 +64,7 @@
             Estou iniciando na area de programação  <br></br>
             E este é meu protifolio 
     </p> 
-    <template id="objetoTemplate">
-        <div class="objeto">
-            <img id="objetoImagem">
-            <h2 class="objetoNome"></h2>
-            <p class="objetoDesc"></p>
-            <a class="objetoLink" href="https://github.com/NathielNMendes/Portifolio"></a>
-        </div> 
+    
         <?php
             require_once "./footer.phtml";
         ?>
