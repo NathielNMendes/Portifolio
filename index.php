@@ -56,7 +56,7 @@
 
 <body>
         <?php
-            include"./header.phtml";
+            include_once("./header.phtml");
         ?>
         <div class="bio" id="phraseContainer" >        
         <div id="phrase visible" > Olá seja bem vindo </div > 
@@ -64,7 +64,7 @@
         <div id="phrase"> E este é meu protifolio </div >
         </div> 
          <?php
-            include"./footer.phtml";
+            include_once("./footer.phtml");
         ?>
     
     <template id="objetoTemplate">
