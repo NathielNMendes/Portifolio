@@ -9,7 +9,7 @@
 </head>
 <body>
 <?php
-            include("./header.phtml");
+            include"./header.phtml";
         ?>
 
     <div class="container">
@@ -26,7 +26,7 @@
     </div>
 
     <?php
-            include("./footer.phtml");
+            include"./footer.phtml";
         ?>
 
     <script>

@@ -56,15 +56,15 @@
 
 <body>
         <?php
-            include("./header.phtml");
+            include"./header.phtml";
         ?>
         <div class="bio" id="phraseContainer" >        
-        <div class="phrase visible" > Olá seja bem vindo </div > 
-        <div class="phrase"> Estou iniciando na area de programação </div >
-        <div class="phrase"> E este é meu protifolio </div >
+        <div id="phrase visible" > Olá seja bem vindo </div > 
+        <div id="phrase"> Estou iniciando na area de programação </div >
+        <div id="phrase"> E este é meu protifolio </div >
         </div> 
          <?php
-            include("./footer.phtml");
+            include"./footer.phtml";
         ?>
     
     <template id="objetoTemplate">

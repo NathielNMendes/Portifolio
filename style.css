@@ -270,19 +270,17 @@ nav ul li a {
     background-size: 400% 400%;
     animation: gradientAnimation 10s ease infinite;
 }
-.phraseContainer{
-    width: 100%;
-    text-align: center;
-    font-size: 24px;
+.phrase{
+    color : #d02727; /* Definindo a cor do texto no container */
+    text-decoration-color: #030000;
+    max-width: 800px;
+    margin: 20px auto;
     padding: 20px;
-    border: 1px solid #ccc;
-    margin-top: 20px;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    display: flex; 
+    background: linear-gradient(to bottom right, #86ecec, #f8f6f6); /* Fundo em degrade */
+    background-size: 400% 400%;
+    animation: gradientAnimation 10s ease infinite;
 }
 
-.phrase  {
-    display: flexbox;
-}
-
-.visible {
-    display: block;
-}

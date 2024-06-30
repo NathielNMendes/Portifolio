@@ -11,7 +11,7 @@
 </head>
 <body>
 <?php
-            include("./header.phtml");
+            include"./header.phtml";
         ?>
 <div class="other-info">
     <!-- Aqui você pode adicionar outras informações -->
@@ -35,7 +35,7 @@
     </form>
   </div>
   <?php
-            include("./footer.phtml");
+            include"./footer.phtml";
         ?>
  
   
