@@ -58,10 +58,13 @@
         <?php
             include_once"./header.phtml";
         ?>
-        <div class="bio" id="phraseContainer" >        
-        <div id="phrase visible" > Olá seja bem vindo </div > 
-        <div id="phrase"> Estou iniciando na area de programação </div >
-        <div id="phrase"> E este é meu protifolio </div >
+       
+        <div class="container" id="phraseContainer" >        
+        <div id="phrase v" >  
+            <img src="./gatoo.jpg" alt="gato" id="gato">
+            Olá seja bem vindo  <br></br>
+            Estou iniciando na area de programação  <br></br>
+            E este é meu protifolio 
         </div> 
          <?php
             include_once"./footer.phtml";

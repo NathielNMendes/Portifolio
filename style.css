@@ -49,8 +49,19 @@ h1:hover {
     animation: gradientAnimation 10s ease infinite;
     flex: 1;
 }
-
+#gato {
+    width:400px;
+    margin: 0;
+    height: auto;
+    display: block;
+    border-radius: 50%;
+    flex: 1; /* Ajuste de tamanho relativo */
+    margin-right: relative; /* Espaçamento entre as divs */
+    margin-top: 30px;
+    position: center; /* Para usar posicionamento absoluto */
+}
 .profile-image {
+    
     flex: 1; /* Ajuste de tamanho relativo */
     margin-right: 10px; /* Espaçamento entre as divs */
     text-align: center;
