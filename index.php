@@ -56,7 +56,7 @@
 
 <body>
         <?php
-            include_once"./header.phtml";
+           require_once "./header.phtml";
         ?>
        
         <div class="container" id="phraseContainer" >        
@@ -67,7 +67,7 @@
             E este é meu protifolio 
         </div> 
          <?php
-            include_once"./footer.phtml";
+            require_once "./footer.phtml";
         ?>
     
     <template id="objetoTemplate">

@@ -11,7 +11,7 @@
 </head>
 <body>
 <?php
-           include_once"./header.phtml";
+           require_once "./header.phtml";
         ?>
 <div class="other-info">
     <!-- Aqui você pode adicionar outras informações -->
@@ -35,7 +35,7 @@
     </form>
   </div>
   <?php
-            include_once"./footer.phtml";
+            require_once "./footer.phtml";
         ?>
  
   
