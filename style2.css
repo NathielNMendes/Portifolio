@@ -59,3 +59,16 @@ body {
 .container input[type="submit"]:hover {
     background-color: #45a049; /* Cor do botão de envio ao passar o mouse */
 }
+.header {
+    background-color: #333;
+    color: #fff;
+    padding: 10px 20px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.header h1 {
+    margin: 0;
+}
+

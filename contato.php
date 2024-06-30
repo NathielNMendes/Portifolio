@@ -1,48 +1,25 @@
-<?php
-//if ($_SERVER["REQUEST_METHOD"] == "POST") {
-  //  $nome = $_POST['nome'];
-    //$telefone = $_POST['telefone'];
-  //  $email = $_POST['email'];
-  ///  $mensagem = $_POST['mensagem'];
 
-   // $destino = 'seuemail@example.com';
-   // $assunto = 'Formulário de Contato';
-
-    //$conteudo = "Nome: $nome\n";
-  //  $conteudo .= "Telefone: $telefone\n";
-   // $conteudo .= "Email: $email\n";
-   //// $conteudo .= "Mensagem: $mensagem\n";
-
-    ///$headers = "De: $nome <$email>";
-
-    ///if (mail($destino, $assunto, $conteudo, $headers)) {
-      ///  echo '<script>alert("Mensagem enviada com sucesso!");</script>';
-   /// } else {
-   //     echo '<script>alert("Erro ao enviar mensagem. Por favor, tente novamente mais tarde.");</script>';
-   // }
-// }
-?>
 <!DOCTYPE html>
 <html lang="pt-BR">
 <head>
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
 <title>Formulário de Contato</title>
-<link rel="stylesheet" href="style2.css">
+<link rel="stylesheet" href="style.css">
 <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
 <script src="script.js"></script>
 </head>
 <body>
-
-
-<div class="container">
+<?php
+            include("./header.phtml");
+        ?>
 <div class="other-info">
     <!-- Aqui você pode adicionar outras informações -->
     <h2>Vamos entrar em contato ?</h2>
     <p>Adicionr algumas informações adicionais aqui...</p>
   </div>
 </div>
-  <div class="container">
+  <div class="container2">
   <h2>Formulário de Contato</h2><br><br>
     <form id="contactForm" onsubmit='return validacao()' method='POST' >
         <label for="nome">Nome:</label><br>
@@ -57,7 +34,10 @@
         <input type="submit" value="Enviar">
     </form>
   </div>
-
+  <?php
+            include("./footer.phtml");
+        ?>
+ 
   
 
 </body>

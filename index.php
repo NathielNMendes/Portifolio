@@ -1,5 +1,7 @@
 <?php
 // cometarios
+
+
 ?>
 
 <!DOCTYPE html>
@@ -11,58 +13,68 @@
     <link rel="stylesheet" href="style.css">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15">
 </head>
-<body>
-<div class="header">
-        <h1>Meu Site</h1>
-        <nav>
-            <ul>
-                <li><a href="#">Início</a></li>
-                <li><a href="#">Sobre</a></li>
-                <li><a href="#">Portfólio</a></li>
-                <li><a href="./contato.php">Contato</a></li>
-            </ul>
-        </nav>
-    </div>
+<script>
+    function construirProjetos(){
+            const jasao = `[
+                {
+                "projetoNome":"MONTASK",
+                "projetoIMG":"IMGmontask.jpeg",
+                "projetoDesc": "O projeto montask é um site organizador de tarefas basico",
+                "projetoLink": "https://github.com/dashboard"
+                },
+                {
+                "projetoNome":"PORTIFOLIO",
+                "projetoIMG":"portfolio.png",
+                "projetoDesc": "Este proprio projeto em que voce esta e demonstra minhas capacidade em programação",
+                "projetoLink": "https://github.com/FelipeESantana/portifolio"
+                }
+                ]`;
+                let objetoProjetos = JSON.parse(jasao);
+                //cria o template original para ser copiado abaixo
+                const template = document.getElementById('objetoTemplate');
+                // Adiciona o objeto ao container de objetos
+                const container = document.getElementById('objetosContainer');
+                //forech para fazer o loop que passara pelo json
+                objetoProjetos.forEach(projeto =>{ 
+                // Clona o template
+                const objetoClone = document.importNode(template.content, true);
 
-    <div class="container">
-        <div class="profile-image">
-            <img src="nathiel1.jpeg" alt="Minha Foto">
-        </div>
-        <div class="bio">
-            <h1> NATHIEL NILSON MENDES </h1>
-            <p>23 de abril de 1994 </p>
-            <p>Nascido em Medianeira, Paraná.</p>
-            <p>Educação: Cursando Administração.</p>
-            <p> Formado no ensino médio no Colégio João Manoel Mondrone.</p>
-            <p>Formação Acadêmica: Graduado em Gestão em Segurança Privada pela Universidade Interativa UNINTER.</p>
-            <p>Experiências Profissional: Supervisor na Inviolável Sistemas de Segurança.</p>
-            <p>Experiências Profissional: Soldado Fuzileiro Naval da Marinha do Brasil.</p>
-            
-            
-
-        </div>
-    </div>
-
-    <div class="footer">
-        <p>Rodapé</p>
-    </div>
-
-    <script>
-        function mostrarLink() {
-            var link = document.getElementById("link");
-            window.open(link.href, "_blank");
+                // Preenche os dados do objeto
+                objetoClone.querySelector('.objetoNome').textContent = projeto.projetoNome;
+                objetoClone.querySelector('.objetoDesc').textContent = projeto.projetoDesc;
+                objetoClone.querySelector('.objetoLink').textContent = projeto.projetoLink;
+                objetoClone.querySelector('.objetoLink').href = projeto.projetoLink;
+                objetoClone.querySelector('#objetoImagem').src = projeto.projetoIMG;
+                container.appendChild(objetoClone);
+                })//termina o forEach
+                
         }
-        
-        function toggleMenu() {
-            var nav = document.querySelector('.nav-links');
-            nav.classList.toggle('show');
-        }
-        
-
-
+        document.addEventListener('DOMContentLoaded', function() {
+            construirProjetos();
+        });
     </script>
 
-        <!--    fazer botao        -->
+<body>
+        <?php
+            include("./header.phtml");
+        ?>
+        <div class="bio" id="phraseContainer" >        
+        <div class="phrase visible" > Olá seja bem vindo </div > 
+        <div class="phrase"> Estou iniciando na area de programação </div >
+        <div class="phrase"> E este é meu protifolio </div >
+        </div> 
+         <?php
+            include("./footer.phtml");
+        ?>
+    
+    <template id="objetoTemplate">
+        <div class="objeto">
+            <img id="objetoImagem">
+            <h2 class="objetoNome"></h2>
+            <p class="objetoDesc"></p>
+            <a class="objetoLink" href=""></a>
+        </div>
+    </template>
 </body>
 </html>
 
