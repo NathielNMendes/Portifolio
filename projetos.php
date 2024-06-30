@@ -19,7 +19,7 @@
     </script>
 <body>
      <?php
-           include_once("./header.phtml");
+           include_once"./header.phtml";
         ?>
     <div id="projetos" >
         <img id="loading" src=" loading.gif " alt=" loading " >
@@ -29,7 +29,7 @@
     <li><a href="./projetos.php">Projetos</a></li>
    
     <?php
-            include_once("./footer.phtml");
+            include_once"./footer.phtml";
         ?>
 </body>
 </html>
