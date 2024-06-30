@@ -15,21 +15,15 @@
 </head>
 <script>
     function construirProjetos(){
-            const jasao = `[
-                {
-                "projetoNome":"MONTASK",
-                "projetoIMG":"IMGmontask.jpeg",
-                "projetoDesc": "O projeto montask é um site organizador de tarefas basico",
-                "projetoLink": "https://github.com/dashboard"
-                },
-                {
+            const jason = `[
+                 {
                 "projetoNome":"PORTIFOLIO",
-                "projetoIMG":"portfolio.png",
-                "projetoDesc": "Este proprio projeto em que voce esta e demonstra minhas capacidade em programação",
-                "projetoLink": "https://github.com/FelipeESantana/portifolio"
+                "projetoIMG":"nathiel1.jpeg",
+                "projetoDesc": " meu projeto inicial em programaçao ",
+                "projetoLink": "https://github.com/NathielNMendes/Portifolio"
                 }
                 ]`;
-                let objetoProjetos = JSON.parse(jasao);
+                let objetoProjetos = JSON.parse(jason);
                 //cria o template original para ser copiado abaixo
                 const template = document.getElementById('objetoTemplate');
                 // Adiciona o objeto ao container de objetos
@@ -38,7 +32,6 @@
                 objetoProjetos.forEach(projeto =>{ 
                 // Clona o template
                 const objetoClone = document.importNode(template.content, true);
-
                 // Preenche os dados do objeto
                 objetoClone.querySelector('.objetoNome').textContent = projeto.projetoNome;
                 objetoClone.querySelector('.objetoDesc').textContent = projeto.projetoDesc;
@@ -47,7 +40,6 @@
                 objetoClone.querySelector('#objetoImagem').src = projeto.projetoIMG;
                 container.appendChild(objetoClone);
                 })//termina o forEach
-                
         }
         document.addEventListener('DOMContentLoaded', function() {
             construirProjetos();
@@ -60,23 +52,22 @@
         ?>
        
         <div class="container" id="phraseContainer" >        
-        <div id="phrase v" >  
+        <p id="phrase ">  
             <img src="./gatoo.jpg" alt="gato" id="gato">
             Olá seja bem vindo  <br></br>
             Estou iniciando na area de programação  <br></br>
             E este é meu protifolio 
-        </div> 
-         <?php
-            require_once "./footer.phtml";
-        ?>
-    
+    </p> 
     <template id="objetoTemplate">
         <div class="objeto">
             <img id="objetoImagem">
             <h2 class="objetoNome"></h2>
             <p class="objetoDesc"></p>
-            <a class="objetoLink" href=""></a>
-        </div>
+            <a class="objetoLink" href="https://github.com/NathielNMendes/Portifolio"></a>
+        </div> 
+        <?php
+            require_once "./footer.phtml";
+        ?>
     </template>
 </body>
 </html>

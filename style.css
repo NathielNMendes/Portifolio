@@ -24,7 +24,7 @@ h1:hover {
     background: linear-gradient(to bottom right, #86ecec, #f8f6f6); /* Fundo em degrade */
     background-size: 400% 400%;
     animation: gradientAnimation 10s ease infinite;
-
+    font: sans-serif;
 }
 .container2 {
     width: 800px;
@@ -35,6 +35,7 @@ h1:hover {
     background: linear-gradient(to bottom right, #86ecec, #f8f6f6); /* Fundo em degrade */
     box-shadow: 0 0 10px rgba(0, 0, 0, 0.1); /* Sombra */
     display: column;
+    
 }
 
 .other-info {
@@ -128,7 +129,7 @@ text-align: center;
 margin-left: 20px; /* Adiciona margem à esquerda */
 justify-content: space-between;
 align-items: center;
-background: linear-gradient(to bottom right, #86ecec, #f8f6f6); /* Fundo em degrade */
+background: linear-gradient(to bottom right, #8ae0e0, #c3e3e6); /* Fundo em degrade */
 }
 .navbar {
 display: flex;
@@ -278,19 +279,6 @@ nav ul li a {
     box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
     display: fixed ; 
     background: linear-gradient(to bottom right, #86ecec, #3cc8e8); /* Fundo em degrade */
-    background-size: 400% 400%;
-    animation: gradientAnimation 10s ease infinite;
-}
-.phrase{
-    color : #d02727; /* Definindo a cor do texto no container */
-    text-decoration-color: #030000;
-    max-width: 800px;
-    margin: 20px auto;
-    padding: 20px;
-    border-radius: 10px;
-    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
-    display: flex; 
-    background: linear-gradient(to bottom right, #86ecec, #f8f6f6); /* Fundo em degrade */
     background-size: 400% 400%;
     animation: gradientAnimation 10s ease infinite;
 }

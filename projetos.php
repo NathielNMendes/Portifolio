@@ -26,8 +26,8 @@
         <div id="conteudo" class="invisivel"
          > conteudo <div> 
     </div>
-    <li><a href="./projetos.php">Projetos</a></li>
-   
+    <li><a href="./projetos.php">Projetos</a>
+    </li>
     <?php
             require_once "./footer.phtml";
         ?>

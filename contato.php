@@ -10,7 +10,7 @@
 <script src="script.js"></script>
 </head>
 <body>
-<?php
+  <?php
            require_once "./header.phtml";
         ?>
 <div class="other-info">
@@ -37,9 +37,6 @@
   <?php
             require_once "./footer.phtml";
         ?>
- 
-  
-
 </body>
 </html>
 

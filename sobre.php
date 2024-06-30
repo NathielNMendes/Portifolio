@@ -11,7 +11,6 @@
 <?php
            require_once "./header.phtml";
         ?>
-
     <div class="container">
         <div class="profile-image">
             <img src="nathiel1.jpeg" alt="Minha Foto">
@@ -24,26 +23,18 @@
             <p>Educação: Cursando Administração.</p>
         </div>
     </div>
-
     <?php
            require_once "./footer.phtml";
         ?>
-
     <script>
         function mostrarLink() {
             var link = document.getElementById("link");
             window.open(link.href, "_blank");
         }
-        
         function toggleMenu() {
             var nav = document.querySelector('.nav-links');
             nav.classList.toggle('show');
         }
-        
-
-
     </script>
-
-        <!--    fazer botao        -->
 </body>
 </html>
